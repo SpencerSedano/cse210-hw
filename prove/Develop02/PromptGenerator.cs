@@ -2,7 +2,9 @@ class PromptGenerator
 {
   public List<string> _prompts = new List<string>();
   
-  public PromptGenerator()
+  public PromptGenerator() // Constructor
+  /*It has the same name as the class, it's a special method in a class, can be used to assign arguments 
+  directly when calling the new object.*/ 
   {
     _prompts.Add("What is the most exciting part of your day? ");
     _prompts.Add("What is something that you are grateful for? ");
