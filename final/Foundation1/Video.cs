@@ -20,8 +20,11 @@ public class Video
 
 
   // Display the Video and all of the comments
-  public string DisplayVideoAndComments()
+  public string DisplayVideoInfo()
   {
+    // I had errors here, I cannot Console.WriteLine everything and expect to 
+    // use this value in another part of my program, that is why there is
+    // the return value
     string myVariable = $"{_title} by {_author} ({_length} seconds)";
     return myVariable;
 /*     foreach (Comment comment in _comments)
@@ -30,6 +33,13 @@ public class Video
     } */
   }
 
+  /*public string DisplayComments()
+  {
+    foreach (Comment comment in _comments)
+    {
+      return $"{comment._name}: {comment._text}";
+    }
+  }*/
 
   // Get the number of comments
 }
