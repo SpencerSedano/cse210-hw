@@ -27,19 +27,22 @@ public class Video
     // the return value
     string myVariable = $"{_title} by {_author} ({_length} seconds)";
     return myVariable;
-/*     foreach (Comment comment in _comments)
-    {
-      Console.WriteLine($"{comment._name}: {comment._text}");
-    } */
+
   }
 
-  /*public string DisplayComments()
+  public string DisplayComments()
   {
+    string myComments = "";
     foreach (Comment comment in _comments)
     {
-      return $"{comment._name}: {comment._text}";
+      myComments += $"{comment._name}: {comment._text}\n";
     }
-  }*/
+    return myComments;
+  }
 
   // Get the number of comments
+  public int GetNumberOfComments()
+  {
+    return _comments.Count();
+  }
 }
